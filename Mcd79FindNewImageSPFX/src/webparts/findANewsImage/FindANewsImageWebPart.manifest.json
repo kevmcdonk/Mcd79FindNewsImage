@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "79e615a3-6ccd-49a3-9dbb-815fa5c8c21d",
+  "alias": "FindANewsImageWebPart",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "79e615a3-6ccd-49a3-9dbb-815fa5c8c21d",
+    "group": { "default": "Under Development" },
+    "title": { "default": "FindANewsImage" },
+    "description": { "default": "Help find an image for your newspage" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "FindANewsImage"
+    }
+  }]
+}

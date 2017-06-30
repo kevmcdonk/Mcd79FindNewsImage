@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/findANewsImage/FindANewsImageWebPart.js",
+      "manifest": "./src/webparts/findANewsImage/FindANewsImageWebPart.manifest.json",
+      "outputPath": "./dist/find-a-news-image.bundle.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "findANewsImageStrings": "webparts/findANewsImage/loc/{locale}.js"
+  }
+}

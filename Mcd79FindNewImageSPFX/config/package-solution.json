@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "mcd-79-find-a-news-image-client-side-solution",
+    "id": "8d9265f1-4359-404b-aae9-f48998ce5b85",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/mcd-79-find-a-news-image.sppkg"
+  }
+}
