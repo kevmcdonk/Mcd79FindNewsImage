@@ -14,7 +14,14 @@
     "description": { "default": "Help find an image for your newspage" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "FindANewsImage"
+      "description": "FindANewsImageInitially",
+      "imageLocation": {
+                    "imageId": "-1",
+                    "name": "",
+                    "contentUrl": "",
+                    "thumbnailUrl": ""
+                  },
+      "functionUrl": "https://mcd79findnewsimage.azurewebsites.net/api/Mcd79FindNewImage?code=IcgAnh5TG8R4Zby06bhXZOfv4jWh9tCaALM0AjXKMTvJcwOlcalW5Q=="
     }
   }]
 }

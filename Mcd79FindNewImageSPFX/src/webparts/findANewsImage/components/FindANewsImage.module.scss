@@ -1,3 +1,5 @@
+@import '~office-ui-fabric/dist/sass/Fabric.Common';
+
 .helloWorld {
   .container {
     max-width: 700px;
@@ -49,4 +51,70 @@
       display: inline-block;
     }
   }
+
+  
+  
+
 }
+
+.msListGridExample {
+    overflow: hidden;
+    font-size: 0;
+    position: relative;
+    width:100%;
+    height:1200px;
+  }
+
+  .msListGridExampleTile {
+    text-align: center;
+    outline: none;
+    position: relative;
+    float: left;
+    background: $ms-color-neutralLighter;
+    width:200px;
+    height:200px;
+  }
+
+  .msListGridExampleSizer {
+    padding-bottom: 100%;
+  }
+
+  .msListGridExamplePadder {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+  }
+
+  .msFabric.isFocusVisible .msListGridExampleTile:focus:after {
+    content: '';
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    box-sizing: border-box;
+    border: 1px solid $ms-color-white;
+  }
+
+  .msListGridExamplelabel {
+    background: rgba(0,0,0,.3);
+    color: #ffffff;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+    left: 0;
+    width: 100%;
+    font-size: $ms-font-size-s;
+    box-sizing: border-box;
+  }
+
+  .msListGridExampleImage {
+    max-width: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-height: 200px;
+  }

@@ -4,32 +4,74 @@ import { Version } from '@microsoft/sp-core-library';
 import {
   BaseClientSideWebPart,
   IPropertyPaneConfiguration,
-  PropertyPaneTextField,
-  IWebPartContext,
-  PropertyPaneDropdown,
-  PropertyPaneToggle,
-  PropertyPaneSlider
+  PropertyPaneTextField
 } from '@microsoft/sp-webpart-base';
-
+import { PropertyFieldImagePicker } from './PropertyFields/PropertyFieldImagePicker';
+import * as pnp from 'sp-pnp-js';
 import * as strings from 'findANewsImageStrings';
 import FindANewsImage from './components/FindANewsImage';
 import { IFindANewsImageProps } from './components/IFindANewsImageProps';
 import { IFindANewsImageWebPartProps } from './IFindANewsImageWebPartProps';
-import * as $ from 'jQuery';  
+import {IListItem } from './IListItem';
+import * as $ from 'jQuery';
+
+const functionUrl: string = 'https://functionurlhere';//SET FunctionUrl here
 
 export default class FindANewsImageWebPart extends BaseClientSideWebPart<IFindANewsImageWebPartProps> {
+  protected get previewImageUrl(): string {
+		return this.properties.imageLocation.thumbnailUrl;
+	}
+
+private pageName: string;
+
+protected onInit(): Promise<void> {
+    return new Promise<void>((resolve: () => void, reject: (error?: any) => void): void => {
+      pnp.setup({
+        spfxContext: this.context
+      });
+      
+      resolve();
+    });
+  }
 
   public render(): void {
-    const element: React.ReactElement<IFindANewsImageProps > = React.createElement(
+    
+    if (this.properties.imageLocation == undefined || this.properties.imageLocation.contentUrl == '') {
+      this.properties.imageLocation = {
+          imageId: '-1',
+          name: 'Image',
+          contentUrl: '',
+          thumbnailUrl: ''
+        };
+      var itemId = this.context.pageContext.listItem.id;
+      var self = this;
+      pnp.sp.web.lists.getByTitle('Site Pages')
+      .items.getById(itemId).get(undefined, {
+        headers: {
+          'Accept': 'application/json;odata=minimalmetadata'
+        }
+      })
+      .then((item: IListItem) => {
+      this.properties.imageLocation = {
+          imageId: '-1',
+          name: item.Title,
+          contentUrl: '',
+          thumbnailUrl: ''
+        };
+    console.log('Setting element');
+    
+    });
+  }
+  const element: React.ReactElement<IFindANewsImageProps > = React.createElement(
       FindANewsImage,
       {
         imageSearchText: this.properties.imageSearchText,
         imageExternalLocation: this.properties.imageExternalLocation,
         imageLocation: this.properties.imageLocation,
-        functionUrl: this.properties.functionUrl
+        functionUrl: functionUrl
       }
     );
-
+    
     ReactDom.render(element, this.domElement);
   }
 
@@ -37,32 +79,15 @@ export default class FindANewsImageWebPart extends BaseClientSideWebPart<IFindAN
     return Version.parse('1.0');
   }
 
-  private performImageSearch(value: string): string {
-    if (value === null ||
-      value.trim().length === 0) {
-      return 'Please provide some image text';
-      //TODO: If no text, use page title
-    }
 
-    if (value.length < 5) {
-      return 'Image text should be more than 5';
-    }
-
-    var self = this;
-    $.ajax({
-          url: this.properties.functionUrl + "&query=" +  value,
-          method: "GET"
-      }).done(function (data) {
-        var response = JSON.parse(data);
-
-        self.properties.imageExternalLocation=  response.value[0].contentUrl;
-         self.context.propertyPane.refresh();
-      });
-
-    return '';
+  selectedImageChanged(propertyPath: string, oldValue: any, newValue: any) {
+    console.log('Property path: ' + propertyPath);
   }
 
   protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration {
+
+   
+      
     return {
       pages: [
         {
@@ -73,18 +98,31 @@ export default class FindANewsImageWebPart extends BaseClientSideWebPart<IFindAN
             {
               groupName: strings.BasicGroupName,
               groupFields: [
-                 PropertyPaneTextField('functionUrl', {
+               /*  PropertyPaneTextField('functionUrl', {
                   label: strings.FunctionUrlLabel
-                }),
-                PropertyPaneTextField('imageSearchText', {
-                  label: strings.ImageSearchTextLabel,
-                  onGetErrorMessage: this.performImageSearch.bind(this)
-                }),
-                PropertyPaneTextField('imageExternalLocation', {
-                  label: strings.ImageExternalLocationLabel
-                }),
-                PropertyPaneTextField('imageLocation', {
-                  label: strings.ImageLocationLabel
+                }),*/
+                PropertyFieldImagePicker('imageLocation', {
+
+                  label: 'Select a picture',
+                  initialValue: {
+                    imageId: '-1',
+                    name: 'find a picture',
+                    contentUrl: '',
+                    thumbnailUrl: ''
+                  },
+                  searchFunctionUrl: functionUrl,
+                  selectedImage: this.properties.imageLocation,
+                  previewImage: true,
+                  disabled: false,
+                  onPropertyChange: this.selectedImageChanged.bind(this),
+                  render: this.render.bind(this),
+                  disableReactivePropertyChanges: this.disableReactivePropertyChanges,
+                  properties: this.properties,
+                  context: this.context,
+                  onGetErrorMessage: null,
+                  deferredValidationTime: 500,
+                  key: 'imagePickerFieldId',
+                  images: []
                 })
               ]
             }
@@ -92,5 +130,10 @@ export default class FindANewsImageWebPart extends BaseClientSideWebPart<IFindAN
         }
       ]
     };
+
+      
   }
 }
+
+
+

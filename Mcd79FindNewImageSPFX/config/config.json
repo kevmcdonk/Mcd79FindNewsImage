@@ -6,8 +6,11 @@
       "outputPath": "./dist/find-a-news-image.bundle.js"
     }
   ],
-  "externals": {},
+  "externals": {
+    "sp-client-custom-fields": "node_modules/sp-client-custom-fields/dist/sp-client-custom-fields.bundle.js"
+  },
   "localizedResources": {
-    "findANewsImageStrings": "webparts/findANewsImage/loc/{locale}.js"
+    "findANewsImageStrings": "webparts/findANewsImage/loc/{locale}.js",
+    "sp-client-custom-fields/strings": "../node_modules/sp-client-custom-fields/lib/loc/{locale}.js"
   }
 }
