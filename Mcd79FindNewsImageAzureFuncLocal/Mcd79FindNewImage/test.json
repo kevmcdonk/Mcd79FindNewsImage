@@ -1,0 +1,135 @@
+{
+    "BING": {
+        "_type": "Images",
+        "instrumentation": {
+            "pageLoadPingUrl": "https:\/\/www.bingapis.com\/api\/ping\/pageload?IG=60298C2AF02F4368A45A9B942EF82F13&CID=165D564F9EE466F12E785D429F4267FF&Type=Event.CPT&DATA=0"
+        },
+        "readLink": "https:\/\/api.cognitive.microsoft.com\/api\/v5\/images\/search?q=Friends",
+        "webSearchUrl": "https:\/\/www.bing.com\/cr?IG=60298C2AF02F4368A45A9B942EF82F13&CID=165D564F9EE466F12E785D429F4267FF&rd=1&h=pFvJWI22quGaZ566uv7x7sS8MKLHf9x1Y8ZDHYZRD2Y&v=1&r=https%3a%2f%2fwww.bing.com%2fimages%2fsearch%3fq%3dFriends%26FORM%3dOIIARP&p=DevEx,5252.1",
+        "totalEstimatedMatches": 757,
+        "value": [
+            {
+                "name": "File:Friends logo.svg - Wikimedia Commons",
+                "webSearchUrl": "https:\/\/www.bing.com\/cr?IG=60298C2AF02F4368A45A9B942EF82F13&CID=165D564F9EE466F12E785D429F4267FF&rd=1&h=ZEIdLOuDUaGp-8DUd6arxDWEhsD5uzL3HjB3eWwu3tI&v=1&r=https%3a%2f%2fwww.bing.com%2fimages%2fsearch%3fview%3ddetailv2%26FORM%3dOIIRPO%26q%3dFriends%26id%3dE1BB13F7C7A1940E14E7E79E9DEE2EBC1A172654%26simid%3d608047064550672637&p=DevEx,5007.1",
+                "thumbnailUrl": "https:\/\/tse4.mm.bing.net\/th?id=OIP.E3c7BZV2hAzb8Gyens7XVAJnBl&pid=Api",
+                "datePublished": "2017-09-16T06:49:00",
+                "contentUrl": "https:\/\/www.bing.com\/cr?IG=60298C2AF02F4368A45A9B942EF82F13&CID=165D564F9EE466F12E785D429F4267FF&rd=1&h=CHm_EA8p2oKrEcTAk0CtbHbR8zEzr2aFqqtlRlh9Lcw&v=1&r=https%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2fthumb%2fb%2fbc%2fFriends_logo.svg%2f1024px-Friends_logo.svg.png&p=DevEx,5009.1",
+                "hostPageUrl": "https:\/\/www.bing.com\/cr?IG=60298C2AF02F4368A45A9B942EF82F13&CID=165D564F9EE466F12E785D429F4267FF&rd=1&h=PtVIbvRr91ghCcNCOzma7PkAymeOmVd93SWu-e4uQZs&v=1&r=https%3a%2f%2fcommons.wikimedia.org%2fwiki%2fFile%3aFriends_logo.svg&p=DevEx,5008.1",
+                "contentSize": "16518 B",
+                "encodingFormat": "png",
+                "hostPageDisplayUrl": "https:\/\/commons.wikimedia.org\/wiki\/File:Friends_logo.svg",
+                "width": 1024,
+                "height": 169,
+                "thumbnail": {
+                    "width": 615,
+                    "height": 101
+                },
+                "imageInsightsToken": "ccid_E3c7BZV2*mid_E1BB13F7C7A1940E14E7E79E9DEE2EBC1A172654*simid_608047064550672637",
+                "imageId": "E1BB13F7C7A1940E14E7E79E9DEE2EBC1A172654",
+                "accentColor": "0098CC"
+            },
+            {
+                "name": "- CHASING PASSIONS : F.R.I.E.N.D.S",
+                "webSearchUrl": "https:\/\/www.bing.com\/cr?IG=60298C2AF02F4368A45A9B942EF82F13&CID=165D564F9EE466F12E785D429F4267FF&rd=1&h=tE5LGrNBLBA8BRjXq9nOLUt_-aHaCh3w873FYUdoxi8&v=1&r=https%3a%2f%2fwww.bing.com%2fimages%2fsearch%3fview%3ddetailv2%26FORM%3dOIIRPO%26q%3dFriends%26id%3dF6657EAE4C754405B3504364381B0BE17069094D%26simid%3d607987501954633447&p=DevEx,5013.1",
+                "thumbnailUrl": "https:\/\/tse4.mm.bing.net\/th?id=OIP.nuGu851qCc_mucOAP4qfQAEsDh&pid=Api",
+                "datePublished": "2011-09-16T12:00:00",
+                "contentUrl": "http:\/\/www.bing.com\/cr?IG=60298C2AF02F4368A45A9B942EF82F13&CID=165D564F9EE466F12E785D429F4267FF&rd=1&h=8g4w2_8AI9Mf9O2Jm-1JtB8YvCvVExPrgNP5XcCpoLc&v=1&r=http%3a%2f%2f4.bp.blogspot.com%2f--n8ufD8nx2g%2fTnNtNp_9oeI%2fAAAAAAAAAO4%2f6yzgGlL3jqE%2fs1600%2ffriends.jpg&p=DevEx,5015.1",
+                "hostPageUrl": "http:\/\/www.bing.com\/cr?IG=60298C2AF02F4368A45A9B942EF82F13&CID=165D564F9EE466F12E785D429F4267FF&rd=1&h=_50Qg3GOleFbLnDDcadQlaOGbR0YuLhnL0P_h-nXEeE&v=1&r=http%3a%2f%2fcolouredbydreamz.blogspot.com%2f2011%2f09%2ffriends.html&p=DevEx,5014.1",
+                "contentSize": "83231 B",
+                "encodingFormat": "jpeg",
+                "hostPageDisplayUrl": "colouredbydreamz.blogspot.com\/2011\/09\/friends.html",
+                "width": 800,
+                "height": 600,
+                "thumbnail": {
+                    "width": 300,
+                    "height": 225
+                },
+                "imageInsightsToken": "ccid_nuGu851q*mid_F6657EAE4C754405B3504364381B0BE17069094D*simid_607987501954633447",
+                "insightsSourcesSummary": {
+                    "shoppingSourcesCount": 0,
+                    "recipeSourcesCount": 0
+                },
+                "imageId": "F6657EAE4C754405B3504364381B0BE17069094D",
+                "accentColor": "AB3120"
+            }
+        ],
+        "displayShoppingSourcesBadges": false,
+        "displayRecipeSourcesBadges": true
+    },
+    "FLICKR": {
+        "photos": {
+            "page": 1,
+            "pages": 4944,
+            "perpage": 100,
+            "total": "494338",
+            "photo": [
+                {
+                    "id": "23559439538",
+                    "owner": "8562322@N06",
+                    "secret": "d69064b772",
+                    "server": "4340",
+                    "farm": 5,
+                    "title": "the bests!",
+                    "ispublic": 1,
+                    "isfriend": 0,
+                    "isfamily": 0
+                },
+                {
+                    "id": "36741188283",
+                    "owner": "8562322@N06",
+                    "secret": "9414f65feb",
+                    "server": "4502",
+                    "farm": 5,
+                    "title": "Playtime",
+                    "ispublic": 1,
+                    "isfriend": 0,
+                    "isfamily": 0
+                },
+                {
+                    "id": "23559097668",
+                    "owner": "10626381@N00",
+                    "secret": "c25029d241",
+                    "server": "4335",
+                    "farm": 5,
+                    "title": "Packing for a friend's San Juans wedding this weekend \ud83d\udc95",
+                    "ispublic": 1,
+                    "isfriend": 0,
+                    "isfamily": 0
+                },
+                {
+                    "id": "37407386901",
+                    "owner": "49968232@N00",
+                    "secret": "fa67168b10",
+                    "server": "4366",
+                    "farm": 5,
+                    "title": "In memory of Steven Oatridge",
+                    "ispublic": 1,
+                    "isfriend": 0,
+                    "isfamily": 0
+                },
+                {
+                    "id": "37374852862",
+                    "owner": "67084790@N03",
+                    "secret": "5044682b47",
+                    "server": "4514",
+                    "farm": 5,
+                    "title": "DRD160605_0718",
+                    "ispublic": 1,
+                    "isfriend": 0,
+                    "isfamily": 0
+                },
+                {
+                    "id": "36695834494",
+                    "owner": "149804963@N02",
+                    "secret": "bbdb12662c",
+                    "server": "4489",
+                    "farm": 5,
+                    "title": "&#xD83C;&#xDF79;\u0645\u0646\u0634\u0646 \u0627\u0644\u0635\u062f\u064a\u0642 \u0627\u0644\u0630\u064a \u0633\u064a\u062f\u0639\u0648\u0643 \u0644\u062a\u0646\u0627\u0648\u0644 \u0630\u0644\u0643\u061f\u061f&#xD83C;&#xDF79; &#xD83C;&#xDF79;\u0645\u0634\u0631\u0648\u0628\u0627\u062a \u0645\u062e\u0641\u0648\u0642\u0629 &#xD83C;&#xDF79; &#xD83C;&#xDF79;Tag your friend who&#x27;s going to buy you one of this??&#xD83C;&#xDF79;",
+                    "ispublic": 1,
+                    "isfriend": 0,
+                    "isfamily": 0
+                }
+            ]
+        }
+    }
+}
